@@ -1,3 +1,7 @@
+:root{
+   --prime-color: #0d6efd
+}
+
 @media all and (min-width: 992px) {
 	.dropdown-menu li{ 
       position: relative;
@@ -36,28 +40,27 @@
    font-size: .9rem;
 }
 
-#categorie img{
-   object-fit: none;
-}
+#categorie{
+   img{
+      object-fit: none;
+   }
 
-#categorie .card-title{
-   height: 2em;
-}
+   .card-title{
+      height: 2em;
+   }
+} 
 
-footer hr{
-   height: 5rem;
-   background-color: red;
-}
+footer{
+   .accordion-body a{
+      font-size: .8rem;
+      line-height: 1.5em;
+      cursor: pointer;
+   }
 
-footer .accordion-body a{
-   font-size: .8rem;
-   line-height: 1.5em;
-   cursor: pointer;
-}
-
-footer .copyrights{
-   font-size: .8rem;
-}
+   .copyrights{
+      font-size: .8rem;
+   }
+} 
 
 #carousel-2nd-caption{
    top: 32%;
@@ -70,7 +73,23 @@ main .news .card img{
 .horizontal-rule{
    height: 5rem; 
    opacity: .5;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+   button{
+      margin: 0 2rem;
+      width: 2rem;
+      height: 2rem;
+      border-radius: .5rem;
+      border: 3px solid white;
+   }
+
+   .horizontal-rule button:hover{
+      box-shadow: 0px 0px .5rem white;
+   }
 }
+
 
 /* Scroll-top button */
 #scroll-top-btn {
@@ -90,9 +109,12 @@ main .news .card img{
  }
  
  #scroll-top-btn:hover {
-   background-color: #0d6efd; /* Add a dark-grey background on hover */
+   background-color: var(--prime-color); /* Add a dark-grey background on hover */
  }
 
  .accordion-button::after{
    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
  }
+
+
+      

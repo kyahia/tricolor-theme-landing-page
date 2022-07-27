@@ -1,6 +1,2 @@
 node_modules/
-src/add-styles.scss
-src/custom.css
-src/custom.css.map
-src/custom.scss
 test/
