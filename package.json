@@ -1,0 +1,16 @@
+{
+  "name": "mega-menu",
+  "version": "1.0.0",
+  "description": "custom mega menu",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass src/custom.scss src/custom.css"
+  },
+  "author": "yahia kerdache",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.0",
+    "jquery": "^3.6.0"
+  }
+}

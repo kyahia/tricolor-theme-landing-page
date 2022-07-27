@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Mega Menu</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+   <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+
+   <button onclick="topFunction()" id="scroll-top-btn" title="Go to top">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+         <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+       </svg>
+   </button>
+
+   <header>
+
+      <nav class="navbar bg-light d-lg-none d-md-block" id="canvas">
+         <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+               <span>+213 (0)23 45 08 90/91</span>
+               <br />
+               <span>contact@investinox.com</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+               aria-controls="offcanvasNavbar">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+               aria-labelledby="offcanvasNavbarLabel">
+               <div class="offcanvas-header">
+                  <h5 class="offcanvas-title text-primary" id="offcanvasNavbarLabel">InvestInox</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+               </div>
+               <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                     <a class="nav-link active" aria-current="page" href="#">ACCUEIL</a>
+                     <a class="nav-link" href="#">PRESENTATION</a>
+                     <a class="nav-link" href="#">PARTENAIRES</a>
+                     <a class="nav-link" href="#">ACTUALITÉ</a>
+                     <a class="nav-link" href="#">CONTACT</a>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </nav>
+
+      <div class="row top-bar align-items-center text-center d-lg-flex d-none" id="top-bar">
+         <div class="col-4">
+            <div class="row">
+               <div class="col border-end">+213 (0)23 45 08 90/91</div>
+               <div class="col">contact@investinox.com</div>
+            </div>
+         </div>
+         <div class="col-lg-8 d-flex justify-content-end">
+            <nav class="nav justify-content-center">
+               <a class="nav-link active" aria-current="page" href="#">ACCUEIL</a>
+               <a class="nav-link" href="#">PRESENTATION</a>
+               <a class="nav-link" href="#">PARTENAIRES</a>
+               <a class="nav-link" href="#">ACTUALITÉ</a>
+               <a class="nav-link" href="#">CONTACT</a>
+            </nav>
+         </div>
+      </div>
+
+      <div class="row m-3 brand-image">
+         <img src="./assets/brand-image.png" alt="rand">
+      </div>
+
+   </header>
+
+   <div class="container-fluid m-0 gx-0 sticky-top" id="navbar-container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="navbar">
+         <div class="container-fluid">
+            <a class="navbar-brand d-lg-none" href="#">Nos Produits</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+               aria-expanded="false" aria-label="Toggle navigation">
+               <i class="bi bi-caret-down">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                     class="bi bi-caret-down" viewBox="0 0 16 16">
+                     <path
+                        d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
+                  </svg>
+               </i>
+            </button>
+            <div class="collapse navbar-collapse" id="main_nav">
+               <ul class="navbar-nav text-uppercase flex-grow-1 justify-content-center">
+
+                  <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Home </a> </li>
+
+                  <li class="nav-item dropdown" id="myDropdown">
+                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> pompes </a>
+                     <ul class="dropdown-menu">
+                        <li> <a class="dropdown-item d-flex" href="#"> centrifuges <span class="ms-auto"> <span
+                                    class="ms-auto"> &raquo; </span> </span></a>
+                           <ul class="submenu dropdown-menu">
+                              <li><a class="dropdown-item" href="#">pompes centrifuge a entrainement magnetique</a></li>
+                              <li><a class="dropdown-item" href="#">pompes centrifuge sanitaire</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li> <a class="dropdown-item d-flex" href="#"> volumetriques <span class="ms-auto"> &raquo;
+                              </span> </a>
+                           <ul class="submenu dropdown-menu">
+                              <li><a class="dropdown-item" href="#">pompes volumetriques sanitaire</a></li>
+                              <li><a class="dropdown-item" href="#">pompes volumetriques a entrainement magnetique</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li> <a class="dropdown-item d-flex" href="#"> vide-fut <span class="ms-auto"> &raquo; </span>
+                           </a>
+                           <ul class="submenu dropdown-menu">
+                              <li><a class="dropdown-item" href="#">pompes vide-fut electrique</a></li>
+                              <li><a class="dropdown-item" href="#">pompes vide-fut pneumatique</a></li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </li>
+
+                  <li class="nav-item active"> <a class="nav-link" href="#">transmission </a> </li>
+
+                  <li class="nav-item dropdown" id="myDropdown">
+                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> equipement </a>
+                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"> caniveaux </a></li>
+                        <li><a class="dropdown-item" href="#"> flexibles </a></li>
+                     </ul>
+                  </li>
+
+                  <li class="nav-item dropdown" id="myDropdown">
+                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> accessoires </a>
+                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"> gamme clamp </a></li>
+                     </ul>
+                  </li>
+
+                  <li class="nav-item"><a class="nav-link" href="#"> toles, tubes & profilés </a></li>
+                  <li class="nav-item"><a class="nav-link" href="#"> decoration & batiment </a></li>
+                  <li class="nav-item"><a class="nav-link" href="#"> telecharger le catalogue </a></li>
+
+               </ul>
+
+               <form class="d-flex ms-auto" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+               </form>
+            </div>
+            <!-- navbar-collapse.// -->
+         </div>
+         <!-- container-fluid.// -->
+      </nav>
+   </div>
+
+   <main>
+      <div class="container slides my-5">
+         <div id="carouselExampleIndicators" class="carousel slide carousel-dark" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+               <div class="carousel-item active" data-bs-interval="2000">
+                  <img src="./assets/slides/Bannière-Djazagro.jpg" class="d-block w-100" alt="rand">
+               </div>
+               <div class="carousel-item" data-bs-interval="2000">
+                  <img src="./assets/slides/Diapo-Evacuation-min-1.jpg" class="d-block w-100" alt="rand">
+                  <div class="carousel-caption d-none d-md-block" id="carousel-2nd-caption">
+                     <h1>Tout pour la production nationale</h1>
+                  </div>
+               </div>
+               <div class="carousel-item" data-bs-interval="2000">
+                  <img src="./assets/slides/flexibles.jpg" class="d-block w-100" alt="rand">
+               </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+               data-bs-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+               data-bs-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Next</span>
+            </button>
+         </div>
+      </div>
+
+      <div class="container solutions my-5">
+         <div class="container" id="secteur">
+            <div class="row my-2">
+               <h1 class="h3 text-uppercase text-primary border-bottom border-primary py-4">nos solutions par secteur
+               </h1>
+            </div>
+            <div class="row justify-content-center">
+               <div class="col-md-6 col-sm-12 col-lg-3 px-4">
+                  <div class="card">
+                     <img src="./assets/vignettes/Vignette-Alimentaire-1.jpg" class="card-img-top" alt="rand"
+                        width="100px">
+                     <div class="card-body">
+                        <h3 class="h6 card-title text-uppercase" style="color: red;">Alimentaire</h3>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-12 col-lg-3 px-4">
+                  <div class="card">
+                     <img src="./assets/vignettes/Vignette-Boissons-1.jpg" class="card-img-top" alt="rand"
+                        width="100px">
+                     <div class="card-body">
+                        <h3 class="h6 card-title text-uppercase" style="color: yellow;">Boissons</h3>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-12 col-lg-3 px-4">
+                  <div class="card">
+                     <img src="./assets/vignettes/Vignette-Energie-1.jpg" class="card-img-top" alt="rand" width="100px">
+                     <div class="card-body">
+                        <h3 class="h6 card-title text-uppercase" style="color: blue;">Energie</h3>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-md-6 col-sm-12 col-lg-3 px-4">
+                  <div class="card">
+                     <img src="./assets/vignettes/Vignette-Pharmaceutique-1.jpg" class="card-img-top" alt="rand"
+                        width="100px">
+                     <div class="card-body">
+                        <h3 class="h6 card-title text-uppercase" style="color: yellowgreen;">Pharmaceutique</h3>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container" id="categorie">
+            <div class="row my-2">
+               <h1 class="h3 text-uppercase text-primary border-bottom border-primary py-4">nos solutions par categorie
+               </h1>
+            </div>
+            <div class="row justify-content-center">
+               <div class="col-md-6 col-sm-12 col-lg-3 px-4">
+                  <div class="card border-0">
+                     <div class="card-header">
+                        <h3 class="h6 card-title text-primary text-uppercase">pompes</h3>
+                     </div>
+                     <img src="./assets/categories/Bandeau-page-Pompes01.jpg" class="card-img-top" alt="rand"
+                        width="100px" height="250px">
+                     <div class="card-body">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-12 col-lg-3 px-4">
+                  <div class="card border-0">
+                     <div class="card-header">
+                        <h3 class="h6 card-title text-primary text-uppercase">equipements</h3>
+                     </div>
+                     <img src="./assets/categories/Bandeau-Equipements01.jpg" class="card-img-top" alt="rand"
+                        width="100px" height="250px">
+                     <div class="card-body">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-12 col-lg-3 px-4">
+                  <div class="card border-0">
+                     <div class="card-header">
+                        <h3 class="h6 card-title text-primary text-uppercase">accessoires</h3>
+                     </div>
+                     <img src="./assets/categories/Bandeau-Accessoires01.jpg" class="card-img-top" alt="rand"
+                        width="100px" height="250px">
+                     <div class="card-body">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-12 col-lg-3 px-4">
+                  <div class="card border-0">
+                     <div class="card-header">
+                        <h3 class="h6 card-title text-primary text-uppercase">tôles, tubes & profilés</h3>
+                     </div>
+                     <img src="./assets/categories/Bandeau-TTP-1.jpg" class="card-img-top" alt="rand" width="100px"
+                        height="250px">
+                     <div class="card-body">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="container news my-5">
+         <div class="row">
+            <div class="col-md-6">
+               <h1 class="h4 text-uppercase text-primary border-bottom border-primary pb-2 mb-4">actualité</h1>
+               <div class="card mb-3 border-0">
+                  <div class="row g-0">
+                     <div class="col-md-7">
+                        <div class="card-body">
+                        <h5 class="card-title text-primary">Certification ISO 9001</h5>
+                        <p class="card-text">
+                           Forte d'une expérience de 20 ans et soucieuse de toujours améliorer ses processus de fonctionnement, INVEST INOX
+                           <a class="link">…Lire la suite</a>
+                        </p>
+                      </div>
+                     </div>
+                     <div class="col-md-5 text-center">
+                       <img src="./assets/news/CERTIFICAT-ISO-2015-2014.jpg" class="img-fluid rounded-end" alt="rend">
+                     </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+               <h1 class="h4 text-uppercase text-primary border-bottom border-primary pb-2 mb-4">nouveautés</h1>
+               <div class="card mb-3 border-0">
+                  <div class="row g-0">
+                     <div class="col-md-7">
+                        <div class="card-body">
+                        <h5 class="card-title text-primary">MACHINES DE COUPE</h5>
+                        <p class="card-text">
+                           Pour une coupe sans déformation des tubes (serrage concentrique Multi-contacts) idéal pour tubes inox fines épaisseurs, offrant une coupe de qualité géométrique et un bon état de surface (bavure limitée), INVEST INOX
+                           <a class="link">…Lire la suite</a>
+                        </p>
+                      </div>
+                     </div>
+                     <div class="col-md-5 text-center">
+                       <img src="./assets/news/Machine-de-Coupe-Orbitale.png" class="img-fluid rounded-end" alt="rend">
+                     </div>
+                  </div>
+                </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="container-fluid bg-light py-3">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6 col-sm-12">
+                  <h2 class="h5 text-uppercase text-primary border-bottom border-primary pb-2 mb-4">CONTACTEZ-NOUS</h2>
+                  <ul class="list-unstyled">
+                     <li><strong>Téléphone : </strong>+213 (0) 23 45 08 90/91</li>
+                     <li><strong>Fax : </strong>+213 (0) 23 45 08 87</li>
+                     <li><strong>Adresse mail : </strong>contact@investinox.com</li>
+                  </ul>
+               </div>
+               <div class="col-md-6 col-sm-12">
+                  <h2 class="h5 text-uppercase text-primary border-bottom border-primary pb-2 mb-4">ADDRESSE</h2>
+                  <ul class="list-unstyled">
+                     <li>Ain Naadja Sud - Lot N° 126/2.</li>
+                     <li>Gué de Constantine</li>
+                     <li>Alger - Algérie</li>
+                  </ul>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </main>
+
+   <footer class="bg-dark">
+      <div class="container-fluid bg-primary py-6 horizontal-rule"></div>
+
+      <div class="container my-3">
+         <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+               <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item bg-dark text-white">
+                     <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed bg-dark text-white" type="button"
+                           data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                           aria-controls="flush-collapseOne">
+                           POMPES
+                        </button>
+                     </h2>
+                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                           <a>POMPES SANITAIRES CN-CL-CLC</a>
+                           <a>POMPES SANITAIRES CS-CSK</a>
+                           <a>POMPES AUTOAMORÇANTES</a>
+                           <a>POMPES À ENTRAINEMENT MAGNÉTIQUE</a>
+                           <a>POMPES À VIS EXCENTRIQUE INOX</a>
+                           <a>POMPES À LOBES INOX</a>
+                           <a>POMPES À TECHNOLOGIE MOUVEX (PISTON EXCENTRÉ) INOX</a>
+                           <a>POMPES À PALETTES INOX</a>
+                           <a>POMPES À VIS EXCENTRIQUE FONTE</a>
+                           <a>POMPES À LOBES VULCANISÉS</a>
+                           <a>POMPES À TECHNOLOGIE MOUVEX (PISTON EXCENTRÉ)</a>
+                           <a>POMPES À PALETTES</a>
+                           <a>POMPES EN ALUMINIUM À COLLIERS</a>
+                           <a>POMPES EN ALUMINIUM A BRIDES</a>
+                           <a>POMPES EN PLASTIQUE À BRIDES</a>
+                           <a>POMPES EN INOX A COLLIERS</a>
+                           <a>POMPES ÉLECTRIQUES INOX</a>
+                           <a>POMPES ÉLECTRIQUES PLASTIQUE</a>
+                           <a>POMPES PNEUMATIQUES PA.</a>
+                           <a>POMPES PNEUMATIQUES PA.I ET PAR</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+               <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item bg-dark text-white">
+                     <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed bg-dark text-white" type="button"
+                           data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                           aria-controls="flush-collapseTwo">
+                           EQUIPEMENTS
+                        </button>
+                     </h2>
+                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                           <a>SIPHONS</a>
+                           <a>CANIVEAUX RIVIÈRE</a>
+                           <a>CANIVEAUX</a>
+                           <a>CAILLEBOTIS</a>
+                           <a>ENROULEUR</a>
+                           <a>MÉLANGEUR</a>
+                           <a>BOULE DE NETTOYAGE</a>
+                           <a>PISTOLET A MOUSSE</a>
+                           <a>DÉBITMÈTRE1</a>
+                           <a>DÉBITMÈTRE2</a>
+                           <a>DÉBITMÈTRE3</a>
+                           <a>DÉBITMÈTRE4</a>
+                           <a>GÉNÉRATEURS DE SOUDAGE</a>
+                           <a>TÊTES DE SOUDAGE EN LIGNE FERME OU OUVERTE</a>
+                           <a>TÊTES DE SOUDAGE SUR PLAQUES</a>
+                           <a>MACHINES DE COUPE</a>
+                           <a>PORTES DE CUVES</a>
+                           <a>CUVE1</a>
+                           <a>CUVE2</a>
+                           <a>CUVE3</a>
+                           <a>ÉCHANGEURS À PLAQUES</a>
+                           <a>ÉCHANGEURS TUBULAIRES</a>
+                           <a>POMPE SUR CHÂSSIS MOBILE</a>
+                           <a>CINTREUSE</a>
+                           <a>MACHINE DE FINITION DE SURFACE</a>
+                           <a>MACHINE DE FINITION DE TUBE</a>
+                           <a>MACHINE DE FINITION D'ANGLE</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+               <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item bg-dark text-white">
+                     <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed bg-dark text-white" type="button"
+                           data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                           aria-controls="flush-collapseThree">
+                           ACCESSOIRES
+                        </button>
+                     </h2>
+                     <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                           <a>TUYAUTERIE</a>
+                           <a>RACCORDERIE</a>
+                           <a>COUDES</a>
+                           <a>TÉS</a>
+                           <a>RÉDUCTIONS</a>
+                           <a>EMBOUTS, MANCHONS, MAMELONS</a>
+                           <a>BOUCHONS</a>
+                           <a>FONDS EMBOUTIS</a>
+                           <a>CLAPETS</a>
+                           <a>COLLIERS</a>
+                           <a>ÉTRIERS</a>
+                           <a>BRIDES ET COLLETS MINCES</a>
+                           <a>FILTRE ÉQUERRE</a>
+                           <a>INDICATEUR DE CIRCULATION</a>
+                           <a>ROBINET À BOISSEAU SPHÉRIQUE</a>
+                           <a>VANNES PAPILLON</a>
+                           <a>VANNE PNEUMATIQUE</a>
+                           <a>VANNE PAPILLON ENTRE BRIDES</a>
+                           <a>SOUPAPE DE SÉCURITÉ</a>
+                           <a>VÉRIN PNEUMATIQUE</a>
+                           <a>MANOMÈTRE</a>
+                           <a>THERMOMÈTRE</a>
+                           <a>VISSERIE</a>
+                           <a>JOINTS</a>
+                           <a>FLEXIBLES ALIMENTAIRES</a>
+                           <a>FLEXIBLES INDUSTRIELS</a>
+                           <a>RACCORDS FLEXIBLES</a>
+                           <a>JUPES FLEXIBLES</a>
+                           <a>ABRASIFS</a>
+                           <a>BAGUETTES DE SOUDURE</a>
+                           <a>PRODUITS DE TRAITEMENT POUR ACIER</a>
+                           <a>INOXYDABLE</a>
+                           <a>PÂTE À POLIR</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+               <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item bg-dark text-white">
+                     <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed bg-dark text-white" type="button"
+                           data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
+                           aria-controls="flush-collapseFour">
+                           TTPs
+                        </button>
+                     </h2>
+                     <div id="flush-collapseFour" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                           <a>TÔLE INOX PLATE</a>
+                           <a>TÔLE INOX PERFORÉE</a>
+                           <a>TÔLE ALUMINIUM</a>
+                           <a>TÔLE INOX ET ALUMINIUM STRIÉE</a>
+                           <a>TUBE ROND INOX</a>
+                           <a>BARRE RONDE INOX</a>
+                           <a>BARRE RONDE ALUMINIUM</a>
+                           <a>BARRE CARRÉ INOX</a>
+                           <a>TUBE RECTANGULAIRE</a>
+                           <a>TUBE CARRÉ</a>
+                           <a>CORNIÈRE</a>
+                           <a>FER PLAT</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="container py-3 text-center">
+         <div class="row text-muted copyrights">
+            © 2017 Invest Inox. Tous droits réservés. Toutes les marques citées sur Invest Inox appartiennent a leur
+            propriétaire respectif.
+         </div>
+      </div>
+   </footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"></script>
+   <script src="./src/bundle.js"></script>
+</body>
+
+</html>

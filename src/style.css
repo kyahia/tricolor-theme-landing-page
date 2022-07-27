@@ -1,0 +1,98 @@
+@media all and (min-width: 992px) {
+	.dropdown-menu li{ 
+      position: relative;
+   }
+	.nav-item .submenu{ 
+		display: none;
+		position: absolute;
+		left:100%; top:-7px;
+	}
+	.nav-item .submenu-left{ 
+		right:100%; left:auto;
+	}
+	.dropdown-menu > li:hover{ background-color: #f1f1f1 }
+	.dropdown-menu > li:hover > .submenu{ display: block; }
+   .navbar-collapse form{
+      width: 7em;
+   }
+   .navbar-collapse .navbar-nav, .nav-item .dropdown-menu{
+      font-size: .8rem;
+   }
+}	
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+  .dropdown-menu .dropdown-menu{
+      margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
+  }
+}
+
+#top-bar{
+   font-size: .6rem;
+}
+
+#canvas .navbar-brand{
+   font-size: .9rem;
+}
+
+#categorie img{
+   object-fit: none;
+}
+
+#categorie .card-title{
+   height: 2em;
+}
+
+footer hr{
+   height: 5rem;
+   background-color: red;
+}
+
+footer .accordion-body a{
+   font-size: .8rem;
+   line-height: 1.5em;
+   cursor: pointer;
+}
+
+footer .copyrights{
+   font-size: .8rem;
+}
+
+#carousel-2nd-caption{
+   top: 32%;
+}
+
+main .news .card img{
+   max-height: 60vh;
+}
+
+.horizontal-rule{
+   height: 5rem; 
+   opacity: .5;
+}
+
+/* Scroll-top button */
+#scroll-top-btn {
+   display: none; /* Hidden by default */
+   position: fixed; /* Fixed/sticky position */
+   bottom: 20px; /* Place the button at the bottom of the page */
+   right: 30px; /* Place the button 30px from the right */
+   z-index: 99; /* Make sure it does not overlap */
+   border: none; /* Remove borders */
+   outline: none; /* Remove outline */
+   background-color: #555; /* Set a background color */
+   color: white; /* Text color */
+   cursor: pointer; /* Add a mouse pointer on hover */
+   border-radius: .5em; /* Rounded corners */
+   height: 2.5rem;
+   width: 2.5rem;
+ }
+ 
+ #scroll-top-btn:hover {
+   background-color: #0d6efd; /* Add a dark-grey background on hover */
+ }
+
+ .accordion-button::after{
+   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+ }
